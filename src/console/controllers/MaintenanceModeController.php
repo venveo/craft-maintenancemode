@@ -53,9 +53,8 @@ class MaintenanceModeController extends Controller
      */
     public function actionEnable()
     {
-        if (Craft::$app->getIsSystemOn()) return true;
         $info = Craft::$app->getInfo();
-        $info->on = true;
+        $info->maintenance = true;
         Craft::$app->saveInfo($info);
 
         return true;
@@ -63,9 +62,8 @@ class MaintenanceModeController extends Controller
 
     public function actionDisable()
     {
-        if (!Craft::$app->getIsSystemOn()) return true;
         $info = Craft::$app->getInfo();
-        $info->on = true;
+        $info->maintenance = false;
         Craft::$app->saveInfo($info);
 
         return true;

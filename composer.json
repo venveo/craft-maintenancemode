@@ -19,6 +19,10 @@
         {
             "name": "Venveo",
             "homepage": "https://venveo.com"
+        },
+        {
+            "name": "Ransom Roberson",
+            "email": "ransom@venveo.com"
         }
     ],
     "require": {
