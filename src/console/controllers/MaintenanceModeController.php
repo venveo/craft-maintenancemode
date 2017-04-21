@@ -57,7 +57,7 @@ class MaintenanceModeController extends Controller
         $info->on = false;
         Craft::$app->saveInfo($info);
 
-        return true;
+        return 0;
     }
 
     public function actionDisable()
@@ -66,6 +66,6 @@ class MaintenanceModeController extends Controller
         $info->on = true;
         Craft::$app->saveInfo($info);
 
-        return true;
+        return 0;
     }
 }
