@@ -1,0 +1,47 @@
+{
+    "name": "venveo/maintenance-mode",
+    "description": "Programmatically disable the website through command line",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "maintenance mode"
+    ],
+    "support": {
+        "docs": "https://github.com/venveo/maintenance-mode/blob/master/README.md",
+        "issues": "https://github.com/venveo/maintenance-mode/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Venveo",
+            "homepage": "https://venveo.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "~3.0.0-beta.1"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "venveo\\maintenancemode\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Maintenance Mode",
+        "handle": "maintenanceMode",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/venveo/maintenance-mode/master/CHANGELOG.md",
+        "class": "venveo\\maintenancemode\\MaintenanceMode"
+    }
+}
