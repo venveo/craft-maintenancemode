@@ -19,6 +19,7 @@ use craft\console\Application as ConsoleApplication;
 
 use yii\base\Event;
 
+
 /**
  * Craft plugins are very much like little applications in and of themselves. We’ve made
  * it as simple as we can, but the training wheels are off. A little prior knowledge is
@@ -81,18 +82,5 @@ class MaintenanceMode extends Plugin
                 }
             }
         );
-    }
-
-    // Protected Methods
-    // =========================================================================
-
-    /**
-     * Returns the plugin’s handle (really just an alias of [[\yii\base\Module::id]]).
-     *
-     * @return string The plugin’s handle
-     */
-    public function getHandle(): string
-    {
-        return 'maintenancemode';
     }
 }
