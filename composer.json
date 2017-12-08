@@ -3,6 +3,7 @@
     "description": "Programmatically disable the website through command line",
     "type": "craft-plugin",
     "version": "1.0.1",
+    "minimum-stability": "stable",
     "keywords": [
         "craft",
         "cms",
@@ -45,7 +46,7 @@
         "schemaVersion": "1.0.0",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/venveo/maintenance-mode/master/CHANGELOG.md",
+        "changelogUrl": "https://raw.githubusercontent.com/venveo/craft-maintenancemode/master/CHANGELOG.md",
         "class": "venveo\\maintenancemode\\MaintenanceMode"
     }
 }

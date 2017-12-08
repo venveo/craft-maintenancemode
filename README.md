@@ -3,21 +3,8 @@
 Programmatically disable the website through command line. Use this for your automated build processes to disable the website during build!
 
 ## Installation
-
-To install Maintenance Mode, follow these steps:
-
-1. Unzip to plugins folder
-2. Add plugins/maintenancemode to your composer.json file:
-```json
-"repositories": [
-    {
-      "type": "path",
-      "url": "./plugins/maintenancemode"
-    }
-  ]
-```
-3. Install with composer via symlink: `composer require venveo/maintenance-mode`
-Maintenance Mode works on Craft 3 beta 20 and up
+Maintenance mode can be enabled through composer:
+`composer require venveo/craft-maintenancemode`
 
 ## Usage
 To enable maintenance mode:
@@ -27,7 +14,7 @@ To disable maintenance mode:
 `./craft maintenance-mode/maintenance-mode/disable`
 
 ## Example Scenario
-Using Larvel Forge to deploy your Craft app, you might want to disable the website during the frontend build process:
+Using Laravel Forge to deploy your Craft app, you might want to disable the website during the frontend build process:
 
 ```bash
 cd /home/forge/mysite.com
