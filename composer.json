@@ -1,5 +1,5 @@
 {
-    "name": "venveo/maintenance-mode",
+    "name": "venveo/craft-maintenancemode",
     "description": "Programmatically disable the website through command line",
     "type": "craft-plugin",
     "version": "1.0.1",
@@ -8,17 +8,17 @@
         "cms",
         "craftcms",
         "craft-plugin",
-        "maintenance mode"
+        "maintenance"
     ],
     "support": {
-        "docs": "https://github.com/venveo/maintenance-mode/blob/master/README.md",
-        "issues": "https://github.com/venveo/maintenance-mode/issues"
+        "docs": "https://github.com/venveo/craft-maintenancemode/blob/master/README.md",
+        "issues": "https://github.com/venveo/craft-maintenancemode/issues"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Venveo",
-            "homepage": "https://venveo.com"
+            "homepage": "https://dev.venveo.com"
         },
         {
             "name": "Ransom Roberson",
