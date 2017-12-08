@@ -3,7 +3,6 @@
     "description": "Programmatically disable the website through command line",
     "type": "craft-plugin",
     "version": "1.0.1",
-    "minimum-stability": "stable",
     "keywords": [
         "craft",
         "cms",
@@ -27,7 +26,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "~3.0.0-beta.20"
+        "craftcms/cms": "^3.0.0-RC1"
     },
     "repositories": [
         {
@@ -42,7 +41,7 @@
     },
     "extra": {
         "name": "Maintenance Mode",
-        "handle": "maintenance-mode",
+        "handle": "maintenancemode",
         "schemaVersion": "1.0.0",
         "hasCpSettings": false,
         "hasCpSection": false,

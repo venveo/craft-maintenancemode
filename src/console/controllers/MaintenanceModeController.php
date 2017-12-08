@@ -15,45 +15,17 @@ use venveo\maintenancemode\MaintenanceMode;
 use Craft;
 use yii\console\Controller;
 use yii\helpers\Console;
+use yii\web\ServerErrorHttpException;
 
-/**
- * Control whether the website(s) are in maintenance mode
- *
- * The first line of this class docblock is displayed as the description
- * of the Console Command in ./craft help
- *
- * Craft can be invoked via commandline console by using the `./craft` command
- * from the project root.
- *
- * Console Commands are just controllers that are invoked to handle console
- * actions. The segment routing is plugin/controller-name/action-name
- *
- * The actionIndex() method is what is executed if no sub-commands are supplied, e.g.:
- *
- * ./craft maintenancemode/maintenance-mode
- *
- * Actions must be in 'kebab-case' so actionDoSomething() maps to 'do-something',
- * and would be invoked via:
- *
- * ./craft maintenancemode/maintenance-mode/do-something
- *
- * @author    Venveo
- * @package   MaintenanceMode
- * @since     1.0.0
- */
 class MaintenanceModeController extends Controller
 {
-    /**
-     * Handle maintenancemode/maintenance-mode/enable console commands
-     *
-     * The first line of this method docblock is displayed as the description
-     * of the Console Command in ./craft help
-     *
-     * @return mixed
-     */
     public function actionEnable()
     {
-        $info = Craft::$app->getInfo();
+        try {
+            $info = Craft::$app->getInfo();
+        } catch ( ServerErrorHttpException $e ) {
+            exit('Failed to get app info');
+        }
         $info->on = false;
         Craft::$app->saveInfo($info);
 
@@ -62,7 +34,11 @@ class MaintenanceModeController extends Controller
 
     public function actionDisable()
     {
-        $info = Craft::$app->getInfo();
+        try {
+            $info = Craft::$app->getInfo();
+        } catch ( ServerErrorHttpException $e ) {
+            exit('Failed to get app info');
+        }
         $info->on = true;
         Craft::$app->saveInfo($info);
 

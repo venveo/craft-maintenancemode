@@ -8,10 +8,10 @@ Maintenance mode can be enabled through composer:
 
 ## Usage
 To enable maintenance mode:
-`./craft maintenance-mode/maintenance-mode/enable`
+`./craft maintenancemode/maintenance-mode/enable`
 
 To disable maintenance mode:
-`./craft maintenance-mode/maintenance-mode/disable`
+`./craft maintenancemode/maintenance-mode/disable`
 
 ## Example Scenario
 Using Laravel Forge to deploy your Craft app, you might want to disable the website during the frontend build process:
