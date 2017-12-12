@@ -1,4 +1,7 @@
 # Maintenance Mode Changelog
+## 1.0.3 - 2017.12.12
+- Added new icon
+
 ## 1.0.2 - 2017.12.08
 - Cleaned up for RC1
 
