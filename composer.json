@@ -2,7 +2,7 @@
     "name": "venveo/craft-maintenancemode",
     "description": "Programmatically disable the website through command line",
     "type": "craft-plugin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "minimum-stability": "stable",
     "keywords": [
         "craft",
